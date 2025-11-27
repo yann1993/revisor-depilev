@@ -1,0 +1,13 @@
+Aquí todos los tests verifican apartados de páginas,
+Se crea un archivo spec.js se ejecuta , se hace en chromium y luego le fdamos a ejecutar test y se hace.
+Ojo, para evitar los errores de timeout poner esto en el inicio de cada funcion test:
+test.setTimeout(240000);
+
+
+comandos usados:
+- Instalar esto: npm init playwright@latest
+- Iniciar el chronum en la pagina deseada: 
+- npx playwright codegen -o tests/nombreArchivo.spec.js https://pagionadeseada.com/ 
+ejemplo de comando:  npx playwright codegen -o tests/depileve-rutina-products-es.spec.js https://depileve.com/es/
+npx playwright test para correr todos los tests, en teoria correrá todos los archivos uno a uno secuencialmente.
+y luego se abre el navegador apara ver los restulados. 
