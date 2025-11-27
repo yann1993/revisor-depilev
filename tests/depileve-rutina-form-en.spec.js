@@ -18,4 +18,5 @@ test('test', async ({ page }) => {
   await page.getByRole('textbox', { name: 'Your email' }).fill('');
   await page.getByRole('button', { name: 'Submit' }).click();
   await page.getByRole('button', { name: 'Submit' }).click();
+  
 });
